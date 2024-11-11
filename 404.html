@@ -10,32 +10,11 @@
         <script type="text/javascript">
         // Get the current path
         var redirectTo = window.location.pathname;
-    console.log(redirectTo)
-        // Map of known paths to their corresponding static HTML files
-        var staticPagesMap = {
-            '/ordersuccess': '/ordersuccess.html',
-            '/ordersuccess.html': '/ordersuccess.html',
-            '/order-success': '/ordersuccess.html',
-            
-            '/orderfailure': '/orderfailure.html' ,
-            '/orderfailure.html': '/orderfailure.html',
-            '/failed-checkout': '/orderfailure.html',  
-
-            '/ordercancel': '/ordercancel.html',
-            '/ordercancel.html': '/ordercancel.html',
-            '/cancel-order':'/ordercancel.html'
-        };
     
-        // Check if the path matches any of the known static pages (without .html)
-        if (staticPagesMap[redirectTo]) {
-            // Redirect to the corresponding .html file
-            window.location.href = staticPagesMap[redirectTo];
-        } else {
-            // For other paths, redirect to index.html
             if (!redirectTo.includes('/index.html')) {
                 window.location.href = '/index.html?redirect=' + redirectTo;
             }
-        }
+        
     </script>
 
     </body>
