@@ -1,22 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml"
-      href="/assets/boitekong_eats_logo.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00284e">
+    <title>Jan Buscop Attorneys</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpeg" href="images/JB-LOGO.jpg">
+    <link rel="apple-touch-icon" href="images/JB-LOGO.jpg">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="#home" aria-label="Jan Buscop Attorneys home"><img src="images/JB-LOGO.jpg" alt="Jan Buscop Attorneys logo"></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" data-route="home">Home</a></li>
+                <li><a href="#practice" data-route="practice">Practice Areas</a></li>
+                <li><a href="#team" data-route="team">Our Team</a></li>
+                <li><a href="#resources" data-route="resources">Resources</a></li>
+                <li><a href="#contact" data-route="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="app">
+        <div class="page-view" id="home" data-page="home">
+            <section class="hero">
+                <h1>Fast, Effective &amp; Specialized Legal Services</h1>
+                <p>Providing expert guidance in property law, estate planning and contract drafting.</p>
+                <a href="#practice" class="btn">Explore Our Services</a>
+            </section>
 
-    <link rel="icon" type="image/png" href="./assets/boitekong_eats_logo.png">
+            <section class="about">
+                <h2>About Us</h2>
+                <p>Jan Buscop Attorneys was established by Jan Buscop in 2021 with the goal of providing fast, effective and specialized legal services. We have a passion for property law, administration of deceased estates and the drafting of contracts. With over seven years of experience, we strive to assist our clients to succeed in their endeavours. We serve clients in Coligny, Itsoseng and Lichtenburg and offer services in English and Afrikaans.</p>
+            </section>
 
-    <link rel="shortcut icon" type="image/png"
-      href="./assets/boitekong_eats_logo.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boitekong Eats IT</title>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bcryptjs/dist/bcrypt.min.js"></script>
-    <script type="module" crossorigin src="/assets/index-BOGTOnGy.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D8wx_0zo.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+            <section class="services">
+                <h2>Our Services</h2>
+                <div class="service-grid">
+                    <div class="service">
+                        <h3>Property Law &amp; Conveyancing</h3>
+                        <p>We handle all aspects of property transfers and registrations.</p>
+                        <ul>
+                            <li>Transfer of residential, business and agricultural properties</li>
+                            <li>Registration of private mortgage bonds</li>
+                            <li>Subdivision of property and sectional titles</li>
+                            <li>Drafting of sale agreements</li>
+                            <li>Handling lost or destroyed deeds and estate transfers</li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <h3>Estate Planning &amp; Administration</h3>
+                        <p>Comprehensive assistance for estates and trusts.</p>
+                        <ul>
+                            <li>Executor appointments and estate administration</li>
+                            <li>Liquidation and distribution accounts</li>
+                            <li>Opening estate late bank accounts</li>
+                            <li>Drafting wills, testamentary and family trusts</li>
+                            <li>Registration of companies and trusts to safeguard assets</li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <h3>Contracts &amp; Notarial Agreements</h3>
+                        <p>Tailored agreements to suit your unique needs.</p>
+                        <ul>
+                            <li>Ante-nuptial and other notarial contracts</li>
+                            <li>Drafting trust deeds and sale agreements (movable/immovable property)</li>
+                            <li>Sale and transfer of shares and businesses</li>
+                            <li>Partnership agreements</li>
+                            <li>Specialised contract drafting for various industries</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta">
+                <h2>Ready to Talk?</h2>
+                <p>Our experienced team is here to guide you through your legal matters.</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </section>
+        </div>
+
+        <div class="page-view" id="practice" data-page="practice">
+            <section class="about">
+                <h2>Practice Areas</h2>
+                <p>We offer a comprehensive range of legal services tailored to individuals and businesses. Our practice areas span property transactions, estate administration, contract drafting and several specialised fields. Explore our areas of expertise below.</p>
+            </section>
+            <section class="services">
+                <div class="service-grid">
+                    <div class="service">
+                        <h3>Conveyancing &amp; Property Law</h3>
+                        <p>Our conveyancing team ensures smooth and legally compliant property transactions.</p>
+                        <ul>
+                            <li>Transfer of residential, agricultural and business properties</li>
+                            <li>Registration of private mortgage bonds and sectional titles</li>
+                            <li>Subdivision of farms, stands and estates</li>
+                            <li>Drafting and review of sale agreements</li>
+                            <li>Replacement of lost deeds and estate-related transfers</li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <h3>Estate Planning &amp; Deceased Estates</h3>
+                        <p>Proper planning protects your legacy and simplifies estate administration for your heirs.</p>
+                        <ul>
+                            <li>Appointment of executors and masters' representatives</li>
+                            <li>Advertisement of estates to creditors</li>
+                            <li>Preparation of liquidation and distribution accounts</li>
+                            <li>Opening estate late bank accounts and paying creditors and beneficiaries</li>
+                            <li>Drafting wills, testamentary and family trusts</li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <h3>Contracts &amp; Notarial Services</h3>
+                        <p>We draft and register agreements that protect your interests and support your business.</p>
+                        <ul>
+                            <li>Drafting of ante-nuptial agreements</li>
+                            <li>Trust deeds and partnership agreements</li>
+                            <li>Sale and transfer of shares and businesses</li>
+                            <li>Sale agreements for movable and immovable property</li>
+                            <li>Specialised contract drafting for commercial transactions</li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <h3>Other Specialisations</h3>
+                        <p>Beyond our core services, we assist clients with a variety of legal needs.</p>
+                        <ul>
+                            <li>Leases and rental agreements</li>
+                            <li>Pensions &amp; retirement funds</li>
+                            <li>Trusts &amp; estate management</li>
+                            <li>Wills and succession planning</li>
+                            <li>General legal advice and consultations</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="page-view" id="team" data-page="team">
+            <section class="about">
+                <h2>Our Team</h2>
+                <p>Meet the professionals behind Jan Buscop Attorneys. Our dedicated team is committed to delivering personalized legal services with integrity and efficiency.</p>
+            </section>
+            <section class="services">
+                <div class="service-grid single-card">
+                    <div class="service attorney-profile">
+                        <h3>Jan Buscop</h3>
+                        <p>Director / Attorney</p>
+                        <p>Jan Buscop is the founder and director of Jan Buscop Attorneys. He is admitted to the High Court as an attorney and is listed on the practising roll. With over seven years of professional experience, he specialises in conveyancing, deceased estates, estate planning and contract law. Jan leads the firm with a dedication to providing fast, effective and specialised legal services.</p>
+                        <ul>
+                            <li><strong>Education &amp; Admissions:</strong> Admitted to the High Court of South Africa.</li>
+                            <li><strong>Languages:</strong> English &amp; Afrikaans</li>
+                            <li><strong>Address:</strong> 26 Dr Nelson Mandela Drive, Lichtenburg 2740</li>
+                            <li><strong>Phone:</strong> 087 265 9497</li>
+                            <li><strong>Email:</strong> <a href="mailto:info@buscop.co.za">info@buscop.co.za</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="page-view" id="resources" data-page="resources">
+            <section class="about">
+                <h2>Resources &amp; Frequently Asked Questions</h2>
+                <p>This page provides helpful information about common legal questions and processes. Use these resources to better understand our services and prepare for your consultation.</p>
+            </section>
+            <section class="services">
+                <div class="service-grid">
+                    <div class="service">
+                        <h3>What is Conveyancing?</h3>
+                        <p>Conveyancing is the legal process of transferring ownership of immovable property from one party to another. It involves drafting a deed of sale, conducting title searches, ensuring compliance with regulations, and registering the property transfer. Our firm manages all stages of the process, including communication with banks and deeds offices.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Why Plan Your Estate?</h3>
+                        <p>Estate planning ensures that your assets are distributed according to your wishes and that your loved ones are taken care of. Drafting a valid will, creating trusts and nominating beneficiaries can reduce disputes and estate duty. We advise on drafting wills and establishing trusts to protect your legacy.</p>
+                    </div>
+                    <div class="service">
+                        <h3>What is an Ante-Nuptial Contract?</h3>
+                        <p>An ante-nuptial contract (ANC) is an agreement entered into before marriage to specify how a couple's assets and liabilities will be managed. It can exclude community of property and help protect individual assets. Our firm drafts and registers ANCs to meet your needs and comply with South African law.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Legal Notices &amp; Updates</h3>
+                        <p>We regularly publish notices and updates relevant to property transfers, estate administration and court proceedings. Stay tuned to this section for the latest legal updates, news about National Wills Week and other events.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="page-view" id="contact" data-page="contact">
+            <section class="about">
+                <h2>Contact Us</h2>
+                <p>We welcome your enquiries. Please contact us directly by telephone or email, or follow our Facebook page for firm updates.</p>
+            </section>
+            <section class="contact-container">
+                <div class="contact-info">
+                    <h3>Our Office</h3>
+                    <p>26 Dr Nelson Mandela Drive<br> Lichtenburg, 2740</p>
+                    <p><strong>Phone:</strong> 087 265 9497</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@buscop.co.za">info@buscop.co.za</a></p>
+                    <p><strong>Office Hours:</strong> Monday - Friday, 08:00 - 16:30</p>
+                </div>
+                <div class="facebook-cta">
+                    <h3>Follow Us on Facebook</h3>
+                    <p>Stay connected with Jan Buscop Attorneys for firm news, notices and helpful legal updates.</p>
+                    <a class="facebook-link" href="https://www.facebook.com/JanBuscopAttorneys" target="_blank" rel="noopener noreferrer" aria-label="Follow Jan Buscop Attorneys on Facebook">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.78-3.91 1.1 0 2.25.2 2.25.2v2.48H15.2c-1.24 0-1.63.78-1.63 1.57v1.87h2.78l-.44 2.91h-2.34V22C18.34 21.24 22 17.08 22 12.06z"/>
+                        </svg>
+                        Follow Our Page
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <h3>Find Us</h3>
+                    <iframe src="https://www.google.com/maps?q=26%20Dr%20Nelson%20Mandela%20Drive%20Lichtenburg%20South%20Africa&amp;output=embed" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2026 Jan Buscop Attorneys. All rights reserved.</p>
+        </div>
+    </footer>
+    <a class="whatsapp-button" href="https://wa.me/27872659497" target="_blank" rel="noopener noreferrer" aria-label="Contact Jan Buscop Attorneys on WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M19.05 4.91A9.83 9.83 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91a9.86 9.86 0 0 0-2.91-7.01zM12.05 20.15h-.01a8.22 8.22 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.2 8.2 0 0 1 5.83 2.42 8.2 8.2 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.8-.23-.08-.39-.12-.56.12-.17.25-.64.8-.79.96-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.76-1.85-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29z"/>
+        </svg>
+    </a>
+    <script src="js/script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js');
+            });
+        }
+    </script>
+</body>
 </html>

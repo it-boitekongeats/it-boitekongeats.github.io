@@ -1,0 +1,373 @@
+/*
+ * Stylesheet for Jan Buscop Attorneys website
+ *
+ * This simple CSS file defines a clean, modern and responsive layout.
+ * It uses flexbox and media queries to ensure the design adapts to
+ * mobile, tablet and desktop screens. Colours and spacing are chosen
+ * to be professional and readable.
+ */
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Navbar */
+header {
+  background: #00284e;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  flex: 0 0 auto;
+}
+
+.navbar .logo img {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #c5e0ff;
+}
+
+.nav-links li a.active {
+  color: #ffc107;
+}
+
+/* Mobile nav toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero section */
+.page-view {
+  display: none;
+}
+
+.page-view.active {
+  display: block;
+}
+
+.hero {
+  /* Background image for the hero section. Replace with your own image if desired. */
+  background:
+    linear-gradient(rgba(12, 18, 24, 0.72), rgba(12, 18, 24, 0.72)),
+    url('../images/hero-abstract.png') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+.btn {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* About section */
+.about {
+  padding: 3rem 1rem;
+  background: #fff;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Services section */
+.services {
+  background: #f1f5f8;
+  padding: 3rem 1rem;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-intro {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-grid.single-card {
+  grid-template-columns: minmax(0, 800px);
+  justify-content: center;
+}
+
+.service {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.service h3 {
+  margin-bottom: 0.5rem;
+  color: #00284e;
+}
+
+.service ul {
+  list-style: disc;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.service ul li {
+  margin-bottom: 0.5rem;
+}
+
+.attorney-profile p,
+.attorney-profile li {
+  text-align: justify;
+}
+
+.attorney-profile ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.contact-info,
+.facebook-cta {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-info h3,
+.facebook-cta h3 {
+  margin-bottom: 0.5rem;
+  color: #00284e;
+}
+
+.facebook-cta p {
+  margin-bottom: 1rem;
+}
+
+.facebook-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #1877f2;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.facebook-link:hover {
+  background: #0f5fca;
+}
+
+.facebook-link svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+}
+
+/* Call to action */
+.cta {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #00284e;
+  color: #fff;
+}
+
+.cta p {
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 1rem;
+}
+
+.cta .btn {
+  background: #ffc107;
+  color: #00284e;
+}
+
+.cta .btn:hover {
+  background: #e0a800;
+}
+
+.whatsapp-button {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1001;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.whatsapp-button:hover {
+  background: #1fb457;
+  transform: translateY(-2px);
+}
+
+.whatsapp-button svg {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+
+/* Footer */
+footer {
+  background: #00284e;
+  color: #fff;
+  padding: 1rem;
+}
+
+footer .footer-info {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #00284e;
+    display: none;
+  }
+  .nav-links li {
+    margin: 0;
+    border-top: 1px solid #1a4670;
+  }
+  .nav-links li a {
+    display: block;
+    padding: 1rem;
+    margin: 0;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .navbar .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .whatsapp-button {
+    right: 1rem;
+    bottom: 1rem;
+    width: 50px;
+    height: 50px;
+  }
+  .whatsapp-button svg {
+    width: 27px;
+    height: 27px;
+  }
+}
